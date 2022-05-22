@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'BYekan.ttf';
+    src: url(BYekan.ttf);
+}
+body{
+   font-family: 'BYekan.ttf'; 
+   direction: rtl;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url('../loading-page/image-asset.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+.container ul li a{
+    text-decoration: none;
+    color: wheat;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.container h3{
+    font-size: 35px;
+    color: rgba(255, 49, 13, 0.815);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.loadingPage{
+    position: fixed;
+    transition: all 1.5s ease-in;
+    background: #333;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 1.5s ease-in;
+}
+.loadingPage h1{
+    text-align: center;
+    padding-top: 25%;
+    color: snow;
+}
+.loadingPage h1 div:last-child{
+    color: tomato;
+    padding-top: 5px;
+}
